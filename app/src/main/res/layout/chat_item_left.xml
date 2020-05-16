@@ -17,6 +17,7 @@
         android:layout_toRightOf="@id/profile_image"
         android:layout_marginLeft="5dp"
         android:text="hello"
+        android:textColor="#808080"
         android:id="@+id/show_message"
         android:textSize="18sp"
         android:padding="8dp"

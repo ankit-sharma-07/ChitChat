@@ -26,7 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     MaterialEditText username, email, password;
     Button btn_register;
-ProgressDialog p;
+    ProgressDialog p;
     FirebaseAuth auth;
     DatabaseReference reference;
 
@@ -39,7 +39,7 @@ ProgressDialog p;
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Register");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-p=new ProgressDialog(this);
+        p=new ProgressDialog(this);
         username = findViewById(R.id.username);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -99,7 +99,7 @@ p.show();
                                 }
                             });
                         } else {
-                            Toast.makeText(RegisterActivity.this, "You can't register woth this email or password", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "You can't register with this email or password", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

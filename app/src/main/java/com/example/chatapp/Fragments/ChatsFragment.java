@@ -20,7 +20,6 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.example.chatapp.Adapter.UserAdapter;
 import com.example.chatapp.Model.Chatlist;
 import com.example.chatapp.Model.User;
-import com.example.chatapp.Notifications.Token;
 import com.example.chatapp.R;
 
 import java.util.ArrayList;
@@ -71,17 +70,12 @@ public class ChatsFragment extends Fragment {
             }
         });
 
-        updateToken(FirebaseInstanceId.getInstance().getToken());
 
 
         return view;
     }
 
-    private void updateToken(String token){
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Tokens");
-        Token token1 = new Token(token);
-        reference.child(fuser.getUid()).setValue(token1);
-    }
+
 
     private void chatList() {
         mUsers = new ArrayList<>();

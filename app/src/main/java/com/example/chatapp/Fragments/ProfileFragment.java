@@ -71,13 +71,14 @@ public class ProfileFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                User user = dataSnapshot.getValue(User.class);
+                if(isAdded())
+                {User user = dataSnapshot.getValue(User.class);
                 username.setText(user.getUsername());
                 if (user.getImageURL()!=null && user.getImageURL().equals("default")){
                     image_profile.setImageResource(R.drawable.avatar);
                 } else {
                     Glide.with(getContext()).load(user.getImageURL()).into(image_profile);
-                }
+                }}
             }
 
             @Override
