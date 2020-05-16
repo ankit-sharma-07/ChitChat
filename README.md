@@ -1,17 +1,13 @@
-# ChatAppTutorial
+# ChitChat
+An instant messaging android application implemented with firebase . User can login/rgister, update profile picture,chat with other users and see the status of message ie. delivered or seen. All the users online have a green dot active.
 
-I have deleted google-services.json. Add yours
-<br><b> Change Authorization:key with your key from firebase project</b>
+youtube- https://www.youtube.com/watch?v=Dg2oXDAmRBE
 
-<br>Implementation Guide 
-<br>1 - Project
-<br>1 - Open the Project in your android studio;
-<br>2 - *IMPORTANT* Change the Package Name. (https://stackoverflow.com/questions/16804093/android-studio-rename-package)
+<div>
+<img src="Screenshot_20200314-122913_ChitChat.jpg" width=220 height=420 /> 
+<img src="Screenshot_20200314-122921_ChitChat.jpg" width=220 height=420 />
+<img src="Screenshot_20200314-122942_ChitChat.jpg" width=220 height=420 />
+<img src="Screenshot_20200314-122949_ChitChat.jpg" width=220 height=420 />
+  </div>
 
-<br>2 - Firebase Panel
-<br>- Create Firebase Project (https://console.firebase.google.com/);
-<br>- Import the file google-service.json into your project
-<br>- Connect to firebase console authentication and database from your IDE (video 2)
-<br>- in firebase Storage Rules, change value of "allow read, write:" from "if request.auth != null" to "if true;" (video 12) 
-<br>- For sending notification, paste your Firebase project key into your project APIService.java (video 18) 
-<br>- When you change database settings, you likely will need to uninstall and reinstall apps to avoid app crashes due to app caches.
+
